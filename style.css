@@ -194,6 +194,7 @@ a:hover {
 }
 .hobbies {
   display: flex;
+  justify-content: space-evenly;
   margin: 0 auto;
   padding: 0;
 }
@@ -295,7 +296,7 @@ a:hover {
   background: transparent;
   margin: 25px;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-62%, 0);
   text-decoration: none;
   color: rgb(116, 116, 116);
   box-shadow: 0 0 0 2px white;
@@ -316,6 +317,17 @@ a:hover {
   color: #fff;
 }
 /* __media_________________________________________________ */
+@media (max-width: 980px) {
+  .beginner h1 {
+    font-size: 57px;
+  }
+  .info-text2 h2 {
+    font-size: 40px;
+  }
+  .beginner h2 {
+    font-size: 34px;
+  }
+}
 @media (max-width: 924px) {
   .container {
     width: 840px;
