@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background: #ddc1db;
+}
+ul {
+  padding: 0px;
+}
+
+h2 {
+  font-size: 42px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover {
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0px 0px 30px black;
+}
+.info {
+  display: flex;
+}
+
+.avatar {
+  display: block;
+  max-width: 400px;
+}
+
+.contacts hr {
+  margin: 5px 25px;
+  padding: 0;
+  height: 2px;
+  max-width: 324px;
+  border: none;
+  background: #c324dd;
+}
+.contacts {
+  background: rgb(33, 30, 30);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.contacts h2 {
+  color: white;
+  margin: 0;
+  margin-left: 25px;
+  font-size: 42px;
+}
+
+.contacts li {
+  display: flex;
+  margin: 5px 25px 5px 25px;
+  height: 55px;
+  list-style-type: none;
+  background-color: #bdbbbd;
+}
+.contacts li:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.link img {
+  max-width: 35px;
+  transition: 0.5s;
+}
+.link img:hover {
+  transform: scale(1.2);
+}
+.contacts a,
+.link,
+.local {
+  padding-left: 10px;
+  align-self: center;
+}
+.link a {
+  padding: 0;
+  padding-right: 8px;
+}
+
+.icons,
+.iconsmail {
+  display: block;
+  width: 45px;
+  margin: 5px auto;
+}
+.iconsmail {
+  margin: 12px auto;
+}
+.icons-hav,
+.icons-even {
+  width: 55px;
+  height: 55px;
+  background: #c324dd;
+}
+.icons-even {
+  background: #a51cb7;
+}
+
+.all-skills {
+  background: rgb(197, 197, 197);
+}
+.all-skills h2 {
+  margin: 0;
+  padding-top: 15px;
+  margin-left: 25px;
+  font-size: 42px;
+}
+.all-skills hr {
+  margin: 5px 25px;
+  padding: 0;
+  height: 2px;
+  max-width: 324px;
+  border: none;
+  background: #c324dd;
+}
+.all-skills li {
+  margin: 0;
+  margin-left: 25px;
+  padding: 5px;
+  list-style-type: none;
+}
+.end {
+  height: 25px;
+  background: #c324dd;
+}
+.info-text2 hr {
+  margin: 5px 15px;
+  padding: 0;
+  height: 2px;
+  max-width: 350px;
+  border: none;
+  background: #c324dd;
+}
+.info-text2 {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 77%,
+    rgba(173, 22, 185, 0.29315476190476186) 100%
+  );
+  max-height: 1340px;
+}
+.about p {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.info-text2 h2 {
+  margin: 0;
+  padding-top: 35px;
+  margin-left: 15px;
+  font-size: 42px;
+}
+.info-text2 .about {
+  border-right: 1rem solid #c324dd;
+  padding-bottom: 63px;
+}
+.name h1 {
+  font-size: 64px;
+  margin-top: 0;
+  padding-top: 49px;
+}
+.info-text2 .beginner {
+  display: flex;
+  align-items: center;
+  height: 24%;
+  border-right: 1rem solid #a51cb7;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(173, 22, 185, 0.24273459383753504) 57%
+  );
+}
+.beginner img {
+  align-self: stretch;
+}
+.name h1,
+.name h2 {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+}
+.intarest {
+  margin-top: 300px;
+}
+.hobbies {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+}
+.items-hobbies {
+  position: relative;
+}
+
+.items-hobbies img {
+  max-width: 130px;
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+}
+
+.items-hobbies h3 {
+  z-index: 1;
+  font-weight: bold;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  margin: 0;
+  margin-top: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.items-hobbies:hover h3 {
+  opacity: 1;
+}
+.items-hobbies:hover img {
+  filter: blur(2px);
+}
+.work-experience {
+  border-right: 1rem solid #c324dd;
+}
+table {
+  font-size: 18px;
+  max-width: 90%;
+  width: 90%;
+  margin-top: 25px;
+  margin-left: 15px;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  font-weight: normal;
+  color: #682070;
+  padding: 10px 8px;
+}
+td {
+  color: rgb(81, 81, 99);
+  border-bottom: 1px solid #ccc;
+  padding: 9px 8px;
+  transition: 0.3s linear;
+}
+tr:hover td {
+  color: #c766ff;
+}
+
+/* ___talk_me_______________________________________________________________ */
+.talk-me {
+  background: #ffffff;
+}
+.talk-me h2 {
+  margin: 0;
+  margin-left: 15px;
+}
+.talk-me hr {
+  margin: 5px 15px;
+  padding: 0;
+  margin-bottom: 15px;
+  height: 2px;
+  max-width: 350px;
+  border: none;
+  background: #c324dd;
+}
+
+.flex-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.email-form,
+.name-form {
+  width: 45%;
+}
+.message-form {
+  margin-top: 25px;
+  width: 70%;
+}
+.btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* __media_________________________________________________ */
+@media (max-width: 924px) {
+  .container {
+    width: 840px;
+    margin: auto;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .info-text1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .info-text1 > * {
+    flex: 1 1 auto;
+  }
+  .all-skills {
+    display: flex;
+    justify-content: space-around;
+  }
+  .endmobile {
+    height: 25px;
+    background: #c324dd;
+  }
+  .beginner img {
+    display: none;
+  }
+  .intarest {
+    margin-top: 35px;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 700px;
+    margin: auto;
+  }
+  .avatar {
+    width: 281px;
+  }
+}
+@media (max-width: 679px) {
+  .info h2 {
+    font-size: 35px;
+  }
+  .container {
+    width: 375px;
+    margin: auto;
+  }
+  .avatar {
+    width: 281px;
+  }
+  .name h1 {
+    font-size: 47px;
+  }
+  .name h2 {
+    font-size: 28px;
+  }
+  .items-hobbies,
+  .items-hobbies img {
+    max-width: 95px;
+  }
+}
