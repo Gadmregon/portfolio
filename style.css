@@ -251,7 +251,7 @@ a:hover {
   padding: 9px 8px;
   transition: 0.3s linear;
 }
-.work-experiencetr:hover td {
+.work-experience:hover td {
   color: #c766ff;
 }
 
