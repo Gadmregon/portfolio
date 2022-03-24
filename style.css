@@ -24,6 +24,7 @@ a:hover {
 .container {
   max-width: 1000px;
   margin: auto;
+  overflow: hidden;
   box-shadow: 0px 0px 30px black;
 }
 .info {
@@ -229,7 +230,7 @@ a:hover {
 .work-experience {
   border-right: 1rem solid #c324dd;
 }
-table {
+.work-experience table {
   font-size: 18px;
   max-width: 90%;
   width: 90%;
@@ -238,37 +239,31 @@ table {
   border-collapse: collapse;
   text-align: left;
 }
-th {
+.work-experience th {
   font-weight: normal;
   color: #682070;
   padding: 10px 8px;
 }
-td {
+.work-experience td {
   color: rgb(81, 81, 99);
   border-bottom: 1px solid #ccc;
   padding: 9px 8px;
   transition: 0.3s linear;
 }
-tr:hover td {
+.work-experiencetr:hover td {
   color: #c766ff;
 }
 
 /* ___talk_me_______________________________________________________________ */
 .talk-me {
-  background: #ffffff;
+  padding-top: 45px;
+  background: #fff;
 }
 .talk-me h2 {
   margin: 0;
   margin-left: 15px;
-}
-.talk-me hr {
-  margin: 5px 15px;
-  padding: 0;
-  margin-bottom: 15px;
-  height: 2px;
-  max-width: 350px;
-  border: none;
-  background: #c324dd;
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 .flex-form {
@@ -278,18 +273,48 @@ tr:hover td {
 }
 .email-form,
 .name-form {
-  width: 45%;
+  width: 47%;
+}
+.email-form input,
+.name-form input,
+.message-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #682070;
+  background: transparent;
+  padding: 15px 0 10px;
+  outline: none;
 }
 .message-form {
   margin-top: 25px;
-  width: 70%;
-}
-.btn {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
+  width: 85%;
 }
 
+.btn {
+  position: relative;
+  background: transparent;
+  margin: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+  box-shadow: 0 0 0 2px white;
+  padding: 20px 0;
+  width: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.btn span {
+  position: relative;
+  z-index: 5;
+}
+.btn:hover {
+  background: #c766ff;
+  color: #fff;
+}
 /* __media_________________________________________________ */
 @media (max-width: 924px) {
   .container {
@@ -351,5 +376,9 @@ tr:hover td {
   .items-hobbies,
   .items-hobbies img {
     max-width: 95px;
+  }
+  .email-form,
+  .name-form {
+    width: 85%;
   }
 }
