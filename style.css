@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  background: #ddc1db;
+  background: #ffe5e7;
 }
 ul {
   padding: 0px;
@@ -60,7 +60,7 @@ a:hover {
   margin: 5px 25px 5px 25px;
   height: 55px;
   list-style-type: none;
-  background-color: #bdbbbd;
+  background-color: #eeeaeb;
 }
 .contacts li:nth-child(even) {
   background-color: #ffffff;
@@ -104,7 +104,7 @@ a:hover {
 }
 
 .all-skills {
-  background: rgb(197, 197, 197);
+  background: rgb(237, 235, 235, 0.9);
 }
 .all-skills h2 {
   margin: 0;
@@ -169,7 +169,8 @@ a:hover {
 .info-text2 .beginner {
   display: flex;
   align-items: center;
-  height: 24%;
+  height: 26%;
+  margin-top: -4px;
   border-right: 1rem solid #a51cb7;
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -188,7 +189,7 @@ a:hover {
   padding-left: 15px;
 }
 .intarest {
-  margin-top: 300px;
+  margin-top: 265px;
 }
 .hobbies {
   display: flex;
